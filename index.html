@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yosif | Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  transition: 0.3s;
+}
+
+.light {
+  background: #f1f5f9;
+  color: black;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #38bdf8;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+}
+
+.skills span {
+  background: #38bdf8;
+  padding: 8px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  color: black;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+
+.project {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.light .project {
+  background: white;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <img src="yousif.jpeg" alt="profile">
+  <h1>Hi, I'm Yosif 👋</h1>
+  <p>Java Developer | Backend Enthusiast</p>
+  <button onclick="toggleMode()">Toggle Mode</button>
+  <br>
+  <a href="Yousif Salm Ali (3).pdf" download>
+    <button>Download CV</button>
+  </a>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a Java developer passionate about building real-world applications.
+    I focus on backend development and databases, and I am always improving my skills
+    also I'm a Software Teacher.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>OOP</span>
+    <span>SQL</span>
+    <span>JavaFX</span>
+    <span>Python</span>
+    <span>HTML</span>
+    <span>CSS</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+
+
+<div class="project">
+  <h3>Student Management System</h3>
+  <p>Desktop app using Java and MySQL.</p>
+</div>
+
+<div class="project">
+  <h3>CS50</h3>
+  <p>Advanced at Programming Concepts.</p>
+</div>
+<div class="project">
+  <h3>SCRATCH</h3>
+  <p> Teaching Scratch.</p>
+</div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Contact Me</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+</section>
+
+<footer>
+  <p>© 2026 Yosif</p>
+</footer>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
